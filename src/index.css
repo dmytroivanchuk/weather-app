@@ -1,0 +1,7 @@
+.toggle-unit {
+  display: none;
+
+  &.block {
+    display: block;
+  }
+}
