@@ -1,5 +1,8 @@
 {
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true
+  },
   "rules": {
     // Permit webpack files to import devDependencies with no ESLint error.
     "import/no-extraneous-dependencies": [
