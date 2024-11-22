@@ -1,13 +1,16 @@
-# Web Application Template
+# Todo List
 
-Template repository to facilitate creation of new web apps.
+This is a finished [Weather App project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) from the [Full Stack Javascript Course](https://www.theodinproject.com/paths/full-stack-javascript) of [The Odin Project curriculum](https://www.theodinproject.com/paths).
 
 ## Description
 
-This is a template repository, aimed to easily start building web applications. It includes all necessary development packages and build options already configured.
+Small test application to demonstrate confidence working with Asynchronous JavaScript and APIs.
 
 ## Technologies used:
 
+- JavaScript
+- Promises
+- async/await
 - NPM
 - Webpack
 - ESLint
