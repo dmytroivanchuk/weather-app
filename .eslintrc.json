@@ -1,0 +1,73 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "rules": {
+    // Permit webpack files to import devDependencies with no ESLint error.
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["webpack/webpack.*.js"]
+      }
+    ],
+
+    // Enable airbnb style guide rules, that were removed by prettier.
+    // Configure airbnb style guide rules to not conflict with prettier.
+    // https://github.com/prettier/eslint-config-prettier?tab=readme-ov-file#special-rules
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": false
+      }
+    ],
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": false,
+        "allowUnboundThis": true
+      }
+    ],
+    "curly": ["error", "all"],
+    "max-len": [
+      "error",
+      100,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": false,
+        "onlyOneSimpleParam": false
+      }
+    ],
+    "no-mixed-operators": [
+      "error",
+      {
+        "groups": [
+          ["%", "**"],
+          ["%", "+"],
+          ["%", "-"],
+          ["%", "*"],
+          ["%", "/"],
+          ["/", "*"],
+          ["&", "|", "<<", ">>", ">>>"],
+          ["==", "!=", "===", "!=="],
+          ["&&", "||"]
+        ],
+        "allowSamePrecedence": false
+      }
+    ],
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": false }],
+
+    // Enable airbnb style guide rules, that are disabled.
+    "func-style": ["error", "expression"],
+    "id-length": ["error"]
+  }
+}
