@@ -1,4 +1,4 @@
-# Todo List
+# Weather App
 
 This is a finished [Weather App project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app) from the [Full Stack Javascript Course](https://www.theodinproject.com/paths/full-stack-javascript) of [The Odin Project curriculum](https://www.theodinproject.com/paths).
 
